@@ -2,7 +2,7 @@
   "pixelRatio": 1,
   "vertexCount": 30,
   "vertexMode": "TRIANGLE",
-  // "vertexMode": "LINES",
+  // "vertexMode": "POINTS",
 }*/
 precision mediump float;
 attribute float vertexId;
@@ -42,6 +42,7 @@ void main() {
   pos *= .5;
 
   gl_Position = vec4(pos.x, pos.y * resolution.x / resolution.y, pos.z * .1, 1);
+  gl_PointSize = vertexId * 10.;
 
   v_color = vec4(1.) * sin(vertexId * .3 + time);
 }

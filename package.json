@@ -1,0 +1,18 @@
+{
+  "name": "algorave",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "fand <fand.gmork@gmail.com> (https://gmork.in/)",
+  "license": "MIT",
+  "dependencies": {
+    "glsl-camera-ray": "^1.0.0",
+    "glsl-raytrace": "^1.0.0",
+    "glsl-sdf-primitives": "^0.0.1",
+    "glsl-square-frame": "^1.0.1"
+  }
+}
