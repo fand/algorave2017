@@ -55,7 +55,7 @@ void main() {
   pos.y *= resolution.x / resolution.y;
 
   gl_Position = vec4(pos, 1);
-  gl_PointSize = 3.;
+  gl_PointSize = sin(vertexId) + 30.;
 
   float c = step(0., sin(id * 20. + time * .001));
   v_color = vec4(c, c , c, 1.);
